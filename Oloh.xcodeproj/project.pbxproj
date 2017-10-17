@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA2AB52C1F961DCB00973092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB52B1F961DCB00973092 /* AppDelegate.swift */; };
+		CA2AB52E1F961DCB00973092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB52D1F961DCB00973092 /* ViewController.swift */; };
+		CA2AB5311F961DCB00973092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2AB52F1F961DCB00973092 /* Main.storyboard */; };
+		CA2AB5331F961DCB00973092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2AB5321F961DCB00973092 /* Assets.xcassets */; };
+		CA2AB5361F961DCB00973092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2AB5341F961DCB00973092 /* LaunchScreen.storyboard */; };
+		CA2AB5411F961DCB00973092 /* OlohTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB5401F961DCB00973092 /* OlohTests.swift */; };
+		CA2AB54C1F961DCB00973092 /* OlohUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB54B1F961DCB00973092 /* OlohUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA2AB53D1F961DCB00973092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2AB5201F961DCB00973092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2AB5271F961DCB00973092;
+			remoteInfo = Oloh;
+		};
+		CA2AB5481F961DCB00973092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2AB5201F961DCB00973092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2AB5271F961DCB00973092;
+			remoteInfo = Oloh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA2AB5281F961DCB00973092 /* Oloh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oloh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2AB52B1F961DCB00973092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA2AB52D1F961DCB00973092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA2AB5301F961DCB00973092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA2AB5321F961DCB00973092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA2AB5351F961DCB00973092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA2AB5371F961DCB00973092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2AB53C1F961DCB00973092 /* OlohTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlohTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2AB5401F961DCB00973092 /* OlohTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlohTests.swift; sourceTree = "<group>"; };
+		CA2AB5421F961DCB00973092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2AB5471F961DCB00973092 /* OlohUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlohUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2AB54B1F961DCB00973092 /* OlohUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlohUITests.swift; sourceTree = "<group>"; };
+		CA2AB54D1F961DCB00973092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA2AB5251F961DCB00973092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2AB5391F961DCB00973092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2AB5441F961DCB00973092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA2AB51F1F961DCB00973092 = {
+			isa = PBXGroup;
+			children = (
+				CA2AB52A1F961DCB00973092 /* Oloh */,
+				CA2AB53F1F961DCB00973092 /* OlohTests */,
+				CA2AB54A1F961DCB00973092 /* OlohUITests */,
+				CA2AB5291F961DCB00973092 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA2AB5291F961DCB00973092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA2AB5281F961DCB00973092 /* Oloh.app */,
+				CA2AB53C1F961DCB00973092 /* OlohTests.xctest */,
+				CA2AB5471F961DCB00973092 /* OlohUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA2AB52A1F961DCB00973092 /* Oloh */ = {
+			isa = PBXGroup;
+			children = (
+				CA2AB52B1F961DCB00973092 /* AppDelegate.swift */,
+				CA2AB52D1F961DCB00973092 /* ViewController.swift */,
+				CA2AB52F1F961DCB00973092 /* Main.storyboard */,
+				CA2AB5321F961DCB00973092 /* Assets.xcassets */,
+				CA2AB5341F961DCB00973092 /* LaunchScreen.storyboard */,
+				CA2AB5371F961DCB00973092 /* Info.plist */,
+			);
+			path = Oloh;
+			sourceTree = "<group>";
+		};
+		CA2AB53F1F961DCB00973092 /* OlohTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2AB5401F961DCB00973092 /* OlohTests.swift */,
+				CA2AB5421F961DCB00973092 /* Info.plist */,
+			);
+			path = OlohTests;
+			sourceTree = "<group>";
+		};
+		CA2AB54A1F961DCB00973092 /* OlohUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2AB54B1F961DCB00973092 /* OlohUITests.swift */,
+				CA2AB54D1F961DCB00973092 /* Info.plist */,
+			);
+			path = OlohUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA2AB5271F961DCB00973092 /* Oloh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2AB5501F961DCB00973092 /* Build configuration list for PBXNativeTarget "Oloh" */;
+			buildPhases = (
+				CA2AB5241F961DCB00973092 /* Sources */,
+				CA2AB5251F961DCB00973092 /* Frameworks */,
+				CA2AB5261F961DCB00973092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Oloh;
+			productName = Oloh;
+			productReference = CA2AB5281F961DCB00973092 /* Oloh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA2AB53B1F961DCB00973092 /* OlohTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2AB5531F961DCB00973092 /* Build configuration list for PBXNativeTarget "OlohTests" */;
+			buildPhases = (
+				CA2AB5381F961DCB00973092 /* Sources */,
+				CA2AB5391F961DCB00973092 /* Frameworks */,
+				CA2AB53A1F961DCB00973092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2AB53E1F961DCB00973092 /* PBXTargetDependency */,
+			);
+			name = OlohTests;
+			productName = OlohTests;
+			productReference = CA2AB53C1F961DCB00973092 /* OlohTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA2AB5461F961DCB00973092 /* OlohUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2AB5561F961DCB00973092 /* Build configuration list for PBXNativeTarget "OlohUITests" */;
+			buildPhases = (
+				CA2AB5431F961DCB00973092 /* Sources */,
+				CA2AB5441F961DCB00973092 /* Frameworks */,
+				CA2AB5451F961DCB00973092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2AB5491F961DCB00973092 /* PBXTargetDependency */,
+			);
+			name = OlohUITests;
+			productName = OlohUITests;
+			productReference = CA2AB5471F961DCB00973092 /* OlohUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA2AB5201F961DCB00973092 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "apps-technologies";
+				TargetAttributes = {
+					CA2AB5271F961DCB00973092 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					CA2AB53B1F961DCB00973092 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA2AB5271F961DCB00973092;
+					};
+					CA2AB5461F961DCB00973092 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA2AB5271F961DCB00973092;
+					};
+				};
+			};
+			buildConfigurationList = CA2AB5231F961DCB00973092 /* Build configuration list for PBXProject "Oloh" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA2AB51F1F961DCB00973092;
+			productRefGroup = CA2AB5291F961DCB00973092 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA2AB5271F961DCB00973092 /* Oloh */,
+				CA2AB53B1F961DCB00973092 /* OlohTests */,
+				CA2AB5461F961DCB00973092 /* OlohUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA2AB5261F961DCB00973092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2AB5361F961DCB00973092 /* LaunchScreen.storyboard in Resources */,
+				CA2AB5331F961DCB00973092 /* Assets.xcassets in Resources */,
+				CA2AB5311F961DCB00973092 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2AB53A1F961DCB00973092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2AB5451F961DCB00973092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA2AB5241F961DCB00973092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2AB52E1F961DCB00973092 /* ViewController.swift in Sources */,
+				CA2AB52C1F961DCB00973092 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2AB5381F961DCB00973092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2AB5411F961DCB00973092 /* OlohTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2AB5431F961DCB00973092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2AB54C1F961DCB00973092 /* OlohUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA2AB53E1F961DCB00973092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2AB5271F961DCB00973092 /* Oloh */;
+			targetProxy = CA2AB53D1F961DCB00973092 /* PBXContainerItemProxy */;
+		};
+		CA2AB5491F961DCB00973092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2AB5271F961DCB00973092 /* Oloh */;
+			targetProxy = CA2AB5481F961DCB00973092 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA2AB52F1F961DCB00973092 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA2AB5301F961DCB00973092 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA2AB5341F961DCB00973092 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA2AB5351F961DCB00973092 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA2AB54E1F961DCB00973092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA2AB54F1F961DCB00973092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA2AB5511F961DCB00973092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Oloh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ap.Oloh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA2AB5521F961DCB00973092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Oloh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ap.Oloh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA2AB5541F961DCB00973092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlohTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ap.OlohTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oloh.app/Oloh";
+			};
+			name = Debug;
+		};
+		CA2AB5551F961DCB00973092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlohTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ap.OlohTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oloh.app/Oloh";
+			};
+			name = Release;
+		};
+		CA2AB5571F961DCB00973092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlohUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ap.OlohUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Oloh;
+			};
+			name = Debug;
+		};
+		CA2AB5581F961DCB00973092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OlohUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ap.OlohUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Oloh;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA2AB5231F961DCB00973092 /* Build configuration list for PBXProject "Oloh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2AB54E1F961DCB00973092 /* Debug */,
+				CA2AB54F1F961DCB00973092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2AB5501F961DCB00973092 /* Build configuration list for PBXNativeTarget "Oloh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2AB5511F961DCB00973092 /* Debug */,
+				CA2AB5521F961DCB00973092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2AB5531F961DCB00973092 /* Build configuration list for PBXNativeTarget "OlohTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2AB5541F961DCB00973092 /* Debug */,
+				CA2AB5551F961DCB00973092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2AB5561F961DCB00973092 /* Build configuration list for PBXNativeTarget "OlohUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2AB5571F961DCB00973092 /* Debug */,
+				CA2AB5581F961DCB00973092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA2AB5201F961DCB00973092 /* Project object */;
+}
