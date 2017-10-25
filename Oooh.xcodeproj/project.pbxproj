@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9E0649831FA09ACA00BF3356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39738AE1F9FCD630012DB56 /* Assets.xcassets */; };
+		9E06498E1FA0D2E500BF3356 /* Angeline Vintage_Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E0649861FA0D2E400BF3356 /* Angeline Vintage_Demo.ttf */; };
+		9E06498F1FA0D2E500BF3356 /* KGLifeisMessy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E0649871FA0D2E400BF3356 /* KGLifeisMessy.ttf */; };
+		9E0649901FA0D2E500BF3356 /* NightWindSentSample.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E0649881FA0D2E500BF3356 /* NightWindSentSample.otf */; };
+		9E0649911FA0D2E500BF3356 /* DK Cool Crayon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E0649891FA0D2E500BF3356 /* DK Cool Crayon.ttf */; };
+		9E0649921FA0D2E500BF3356 /* arista.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E06498A1FA0D2E500BF3356 /* arista.ttf */; };
+		9E0649931FA0D2E500BF3356 /* Charcoal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E06498B1FA0D2E500BF3356 /* Charcoal.otf */; };
+		9E0649941FA0D2E500BF3356 /* Angeline Vintage_Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E06498C1FA0D2E500BF3356 /* Angeline Vintage_Demo.otf */; };
+		9E0649951FA0D2E500BF3356 /* NightWindSentSample.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E06498D1FA0D2E500BF3356 /* NightWindSentSample.ttf */; };
 		C39738A81F9FCD630012DB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A71F9FCD630012DB56 /* AppDelegate.swift */; };
 		C39738AA1F9FCD630012DB56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A91F9FCD630012DB56 /* ViewController.swift */; };
 		C39738AD1F9FCD630012DB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738AB1F9FCD630012DB56 /* Main.storyboard */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E0649861FA0D2E400BF3356 /* Angeline Vintage_Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Angeline Vintage_Demo.ttf"; path = "../../../../../../Volumes/Volume_2/Design/Fonts/Angeline Vintage_Demo.ttf"; sourceTree = "<group>"; };
+		9E0649871FA0D2E400BF3356 /* KGLifeisMessy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KGLifeisMessy.ttf; path = ../../../../../../Volumes/Volume_2/Design/Fonts/KGLifeisMessy.ttf; sourceTree = "<group>"; };
+		9E0649881FA0D2E500BF3356 /* NightWindSentSample.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NightWindSentSample.otf; path = ../../../../../../Volumes/Volume_2/Design/Fonts/NightWindSentSample.otf; sourceTree = "<group>"; };
+		9E0649891FA0D2E500BF3356 /* DK Cool Crayon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DK Cool Crayon.ttf"; path = "../../../../../../Volumes/Volume_2/Design/Fonts/DK Cool Crayon.ttf"; sourceTree = "<group>"; };
+		9E06498A1FA0D2E500BF3356 /* arista.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arista.ttf; path = ../../../../../../Volumes/Volume_2/Design/Fonts/arista.ttf; sourceTree = "<group>"; };
+		9E06498B1FA0D2E500BF3356 /* Charcoal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Charcoal.otf; path = ../../../../../../Volumes/Volume_2/Design/Fonts/Charcoal.otf; sourceTree = "<group>"; };
+		9E06498C1FA0D2E500BF3356 /* Angeline Vintage_Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Angeline Vintage_Demo.otf"; path = "../../../../../../Volumes/Volume_2/Design/Fonts/Angeline Vintage_Demo.otf"; sourceTree = "<group>"; };
+		9E06498D1FA0D2E500BF3356 /* NightWindSentSample.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NightWindSentSample.ttf; path = ../../../../../../Volumes/Volume_2/Design/Fonts/NightWindSentSample.ttf; sourceTree = "<group>"; };
 		C39738A41F9FCD630012DB56 /* Oloh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oloh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39738A71F9FCD630012DB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39738A91F9FCD630012DB56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +90,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E0649841FA0D28000BF3356 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				9E0649851FA0D28F00BF3356 /* Fonts */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		9E0649851FA0D28F00BF3356 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9E06498C1FA0D2E500BF3356 /* Angeline Vintage_Demo.otf */,
+				9E0649861FA0D2E400BF3356 /* Angeline Vintage_Demo.ttf */,
+				9E06498A1FA0D2E500BF3356 /* arista.ttf */,
+				9E06498B1FA0D2E500BF3356 /* Charcoal.otf */,
+				9E0649891FA0D2E500BF3356 /* DK Cool Crayon.ttf */,
+				9E0649871FA0D2E400BF3356 /* KGLifeisMessy.ttf */,
+				9E0649881FA0D2E500BF3356 /* NightWindSentSample.otf */,
+				9E06498D1FA0D2E500BF3356 /* NightWindSentSample.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C397389B1F9FCD630012DB56 = {
 			isa = PBXGroup;
 			children = (
+				9E0649841FA0D28000BF3356 /* Ressources */,
 				C39738A61F9FCD630012DB56 /* Oloh */,
 				C39738BB1F9FCD630012DB56 /* OlohTests */,
 				C39738C61F9FCD640012DB56 /* OlohUITests */,
@@ -207,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C397389F1F9FCD630012DB56 /* Build configuration list for PBXProject "Oloh" */;
+			buildConfigurationList = C397389F1F9FCD630012DB56 /* Build configuration list for PBXProject "Oooh" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,9 +272,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E06498F1FA0D2E500BF3356 /* KGLifeisMessy.ttf in Resources */,
 				C39738B21F9FCD630012DB56 /* LaunchScreen.storyboard in Resources */,
+				9E0649931FA0D2E500BF3356 /* Charcoal.otf in Resources */,
+				9E0649921FA0D2E500BF3356 /* arista.ttf in Resources */,
+				9E0649901FA0D2E500BF3356 /* NightWindSentSample.otf in Resources */,
 				9E0649831FA09ACA00BF3356 /* Assets.xcassets in Resources */,
+				9E06498E1FA0D2E500BF3356 /* Angeline Vintage_Demo.ttf in Resources */,
+				9E0649911FA0D2E500BF3356 /* DK Cool Crayon.ttf in Resources */,
 				C39738AD1F9FCD630012DB56 /* Main.storyboard in Resources */,
+				9E0649941FA0D2E500BF3356 /* Angeline Vintage_Demo.otf in Resources */,
+				9E0649951FA0D2E500BF3356 /* NightWindSentSample.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C397389F1F9FCD630012DB56 /* Build configuration list for PBXProject "Oloh" */ = {
+		C397389F1F9FCD630012DB56 /* Build configuration list for PBXProject "Oooh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C39738CA1F9FCD640012DB56 /* Debug */,
