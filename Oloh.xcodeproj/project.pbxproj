@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0649831FA09ACA00BF3356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39738AE1F9FCD630012DB56 /* Assets.xcassets */; };
 		C39738A81F9FCD630012DB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A71F9FCD630012DB56 /* AppDelegate.swift */; };
 		C39738AA1F9FCD630012DB56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A91F9FCD630012DB56 /* ViewController.swift */; };
 		C39738AD1F9FCD630012DB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738AB1F9FCD630012DB56 /* Main.storyboard */; };
-		C39738AF1F9FCD630012DB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39738AE1F9FCD630012DB56 /* Assets.xcassets */; };
 		C39738B21F9FCD630012DB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738B01F9FCD630012DB56 /* LaunchScreen.storyboard */; };
 		C39738BD1F9FCD630012DB56 /* OlohTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738BC1F9FCD630012DB56 /* OlohTests.swift */; };
 		C39738C81F9FCD640012DB56 /* OlohUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738C71F9FCD640012DB56 /* OlohUITests.swift */; };
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39738B21F9FCD630012DB56 /* LaunchScreen.storyboard in Resources */,
-				C39738AF1F9FCD630012DB56 /* Assets.xcassets in Resources */,
+				9E0649831FA09ACA00BF3356 /* Assets.xcassets in Resources */,
 				C39738AD1F9FCD630012DB56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
