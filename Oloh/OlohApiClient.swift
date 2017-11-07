@@ -8,11 +8,11 @@
 
 import Foundation
 import Alamofire
+import RealmSwift
 
 class OlohApiClient {
     let headers: HTTPHeaders
     let olohUrl: String
-    let categories: String
     
     init() {
         // setting url and route
@@ -32,14 +32,21 @@ class OlohApiClient {
         ]
     }
     
-    func getAllCategories() {
+    func syncAllCategories() {
         Alamofire.request(
             "\(self.olohUrl)/wp-json/wc/v2/products/categories?per_page=100",
             headers: headers
-            ).responseJSON { response in
-                if let res = response.result.value {
-                    print("JSON: \(res)")
+            ).responseJSON { (response) -> Void in
+                
+                if let JSON = response.result.value as! [[String: Any]]? {
+                    for elem in JSON {
+                        var newCategory = Category()
+                        newCategory.slug = elem["slug"] as! String
+                        print(newCategory.slug)
+                        newCategory.writeToRealm()
+                    }
                 }
+                    
         }
     }
 }

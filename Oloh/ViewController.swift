@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         let oac = OlohApiClient()
-        oac.getAllCategories()
+        oac.syncAllCategories()
     }
 
     override func didReceiveMemoryWarning() {

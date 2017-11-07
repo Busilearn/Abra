@@ -8,5 +8,6 @@ use_frameworks!
 target ‘Oloh’ do
 
     pod ‘Alamofire’
+    pod ‘RealmSwift’
 
 end
