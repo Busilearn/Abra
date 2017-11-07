@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CC42ABFC69E5293A67F087C /* Pods_Oloh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */; };
+		C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */; };
 		C39738A81F9FCD630012DB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A71F9FCD630012DB56 /* AppDelegate.swift */; };
 		C39738AA1F9FCD630012DB56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A91F9FCD630012DB56 /* ViewController.swift */; };
 		C39738AD1F9FCD630012DB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738AB1F9FCD630012DB56 /* Main.storyboard */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19E47A04AE0FAABA3FA4C104 /* Pods-Oloh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oloh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oloh/Pods-Oloh.debug.xcconfig"; sourceTree = "<group>"; };
+		433C918B80774871F9F97BB1 /* Pods-Oloh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oloh.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oloh/Pods-Oloh.release.xcconfig"; sourceTree = "<group>"; };
+		C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlohApiClient.swift; sourceTree = "<group>"; };
 		C39738A41F9FCD630012DB56 /* Oloh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oloh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39738A71F9FCD630012DB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39738A91F9FCD630012DB56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		C39738C31F9FCD640012DB56 /* OlohUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlohUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39738C71F9FCD640012DB56 /* OlohUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlohUITests.swift; sourceTree = "<group>"; };
 		C39738C91F9FCD640012DB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oloh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC42ABFC69E5293A67F087C /* Pods_Oloh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		947278C37CF66E7E973AA2C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19E47A04AE0FAABA3FA4C104 /* Pods-Oloh.debug.xcconfig */,
+				433C918B80774871F9F97BB1 /* Pods-Oloh.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C397389B1F9FCD630012DB56 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +97,8 @@
 				C39738BB1F9FCD630012DB56 /* OlohTests */,
 				C39738C61F9FCD640012DB56 /* OlohUITests */,
 				C39738A51F9FCD630012DB56 /* Products */,
+				947278C37CF66E7E973AA2C9 /* Pods */,
+				C5511B8A7D0B0B8D4694F7FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +117,7 @@
 			children = (
 				C39738A71F9FCD630012DB56 /* AppDelegate.swift */,
 				C39738A91F9FCD630012DB56 /* ViewController.swift */,
+				C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */,
 				C39738AB1F9FCD630012DB56 /* Main.storyboard */,
 				C39738AE1F9FCD630012DB56 /* Assets.xcassets */,
 				C39738B01F9FCD630012DB56 /* LaunchScreen.storyboard */,
@@ -125,6 +144,14 @@
 			path = OlohUITests;
 			sourceTree = "<group>";
 		};
+		C5511B8A7D0B0B8D4694F7FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39738CC1F9FCD640012DB56 /* Build configuration list for PBXNativeTarget "Oloh" */;
 			buildPhases = (
+				A2BA7DAA47B1BF609D044D67 /* [CP] Check Pods Manifest.lock */,
 				C39738A01F9FCD630012DB56 /* Sources */,
 				C39738A11F9FCD630012DB56 /* Frameworks */,
 				C39738A21F9FCD630012DB56 /* Resources */,
+				1602A3DFF3EE81798602E24C /* [CP] Embed Pods Frameworks */,
+				B8313AC30D5413264B499779 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +284,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1602A3DFF3EE81798602E24C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Oloh/Pods-Oloh-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oloh/Pods-Oloh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2BA7DAA47B1BF609D044D67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Oloh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8313AC30D5413264B499779 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oloh/Pods-Oloh-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C39738A01F9FCD630012DB56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C39738AA1F9FCD630012DB56 /* ViewController.swift in Sources */,
+				C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */,
 				C39738A81F9FCD630012DB56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +509,7 @@
 		};
 		C39738CD1F9FCD640012DB56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E47A04AE0FAABA3FA4C104 /* Pods-Oloh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +524,7 @@
 		};
 		C39738CE1F9FCD640012DB56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433C918B80774871F9F97BB1 /* Pods-Oloh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
