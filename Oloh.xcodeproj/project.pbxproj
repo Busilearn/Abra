@@ -17,6 +17,8 @@
 		C39738B21F9FCD630012DB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738B01F9FCD630012DB56 /* LaunchScreen.storyboard */; };
 		C39738BD1F9FCD630012DB56 /* OlohTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738BC1F9FCD630012DB56 /* OlohTests.swift */; };
 		C39738C81F9FCD640012DB56 /* OlohUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738C71F9FCD640012DB56 /* OlohUITests.swift */; };
+		CA1260C11FB39ECC00CD678A /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */; };
+		CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		C39738C31F9FCD640012DB56 /* OlohUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlohUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39738C71F9FCD640012DB56 /* OlohUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlohUITests.swift; sourceTree = "<group>"; };
 		C39738C91F9FCD640012DB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oloh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,7 @@
 		C39738A61F9FCD630012DB56 /* Oloh */ = {
 			isa = PBXGroup;
 			children = (
+				CA1260C21FB3A66300CD678A /* TableView */,
 				C39738A71F9FCD630012DB56 /* AppDelegate.swift */,
 				C39738A91F9FCD630012DB56 /* ViewController.swift */,
 				C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */,
@@ -153,6 +158,15 @@
 				E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA1260C21FB3A66300CD678A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */,
+				CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +367,8 @@
 				C3040BFB1FB269E3007EBC24 /* RealmObjects.swift in Sources */,
 				C39738AA1F9FCD630012DB56 /* ViewController.swift in Sources */,
 				C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */,
+				CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */,
+				CA1260C11FB39ECC00CD678A /* ProductTableViewController.swift in Sources */,
 				C39738A81F9FCD630012DB56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
