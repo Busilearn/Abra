@@ -11,7 +11,6 @@
 		C3040BFB1FB269E3007EBC24 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3040BFA1FB269E3007EBC24 /* RealmObjects.swift */; };
 		C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */; };
 		C39738A81F9FCD630012DB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A71F9FCD630012DB56 /* AppDelegate.swift */; };
-		C39738AA1F9FCD630012DB56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39738A91F9FCD630012DB56 /* ViewController.swift */; };
 		C39738AD1F9FCD630012DB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738AB1F9FCD630012DB56 /* Main.storyboard */; };
 		C39738AF1F9FCD630012DB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39738AE1F9FCD630012DB56 /* Assets.xcassets */; };
 		C39738B21F9FCD630012DB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738B01F9FCD630012DB56 /* LaunchScreen.storyboard */; };
@@ -41,11 +40,10 @@
 /* Begin PBXFileReference section */
 		19E47A04AE0FAABA3FA4C104 /* Pods-Oloh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oloh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oloh/Pods-Oloh.debug.xcconfig"; sourceTree = "<group>"; };
 		433C918B80774871F9F97BB1 /* Pods-Oloh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oloh.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oloh/Pods-Oloh.release.xcconfig"; sourceTree = "<group>"; };
-		C3040BFA1FB269E3007EBC24 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmObjects.swift; path = ../RealmObjects.swift; sourceTree = "<group>"; };
+		C3040BFA1FB269E3007EBC24 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlohApiClient.swift; sourceTree = "<group>"; };
 		C39738A41F9FCD630012DB56 /* Oloh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oloh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39738A71F9FCD630012DB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C39738A91F9FCD630012DB56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C39738AC1F9FCD630012DB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C39738AE1F9FCD630012DB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39738B11F9FCD630012DB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,11 +119,10 @@
 		C39738A61F9FCD630012DB56 /* Oloh */ = {
 			isa = PBXGroup;
 			children = (
-				CA1260C21FB3A66300CD678A /* TableView */,
+				CA0ED5B91FB43DDD00F4448D /* Model */,
+				CA0ED5B81FB43D9100F4448D /* API */,
+				CA1260C21FB3A66300CD678A /* Controller */,
 				C39738A71F9FCD630012DB56 /* AppDelegate.swift */,
-				C39738A91F9FCD630012DB56 /* ViewController.swift */,
-				C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */,
-				C3040BFA1FB269E3007EBC24 /* RealmObjects.swift */,
 				C39738AB1F9FCD630012DB56 /* Main.storyboard */,
 				C39738AE1F9FCD630012DB56 /* Assets.xcassets */,
 				C39738B01F9FCD630012DB56 /* LaunchScreen.storyboard */,
@@ -160,13 +157,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CA1260C21FB3A66300CD678A /* TableView */ = {
+		CA0ED5B81FB43D9100F4448D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CA0ED5B91FB43DDD00F4448D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3040BFA1FB269E3007EBC24 /* RealmObjects.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA1260C21FB3A66300CD678A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */,
 				CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */,
 			);
-			path = TableView;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,7 +378,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3040BFB1FB269E3007EBC24 /* RealmObjects.swift in Sources */,
-				C39738AA1F9FCD630012DB56 /* ViewController.swift in Sources */,
 				C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */,
 				CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */,
 				CA1260C11FB39ECC00CD678A /* ProductTableViewController.swift in Sources */,

@@ -22,8 +22,22 @@ class CategoryTableViewController: UITableViewController {
     
     var cat = ["Cat1", "Cat2", "Cat3"]
     
-    // MARK: - UITableViewDataSource
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        let oac = OlohApiClient()
+        oac.syncAllCategories()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+        
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -34,10 +48,10 @@ class CategoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! CategoryTableViewCell
-        
+                
         let catName = cat[indexPath.row]
         cell.catTitle?.text = catName
-        cell.catDesc?.text = "Delicious!"
+        cell.catDesc?.text = "Great!"
         cell.catImageView?.image = UIImage(named: "AppIcon")
         
         return cell

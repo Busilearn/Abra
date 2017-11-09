@@ -41,7 +41,7 @@ class OlohApiClient {
                 if let JSON = response.result.value as! [[String: Any]]? {
                     for elem in JSON {
                         
-                        print("\(elem)")
+//                        print("\(elem)")
                         
                         var newCategory = Category()
                         newCategory.slug = elem["slug"] as! String

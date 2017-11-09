@@ -7,7 +7,25 @@
 		<key>Oloh.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C39738A31F9FCD630012DB56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C39738B71F9FCD630012DB56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C39738C21F9FCD640012DB56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
