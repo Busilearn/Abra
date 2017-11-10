@@ -12,6 +12,14 @@ import RealmSwift
 
 class Category : Object {
     @objc dynamic var slug : String? = nil
+    var menu_order : NSInteger? = nil
+    var category_description : String? = nil
+    var image : Any? = nil
+    var count : NSInteger? = nil
+    var parent : NSInteger? = nil
+    var id : NSInteger? = nil
+    var display: String? = nil
+    var category_name : String? = nil
 }
 
 extension Category {

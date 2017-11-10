@@ -41,15 +41,37 @@ class OlohApiClient {
                 if let JSON = response.result.value as! [[String: Any]]? {
                     for elem in JSON {
                         
-//                        print("\(elem)")
-                        
                         var newCategory = Category()
-                        newCategory.slug = elem["slug"] as! String
-                        print(newCategory.slug)
+                        newCategory.slug = elem["slug"] as? String
+                        newCategory.menu_order = elem["menu_order"] as? NSInteger
+                        newCategory.category_description = elem["category_description"] as? String
+                        newCategory.image = elem["image"] as? Any
+                        newCategory.count = elem["count"] as? NSInteger
+                        newCategory.parent = elem["parent"] as? NSInteger
+                        newCategory.id = elem["id"] as? NSInteger
+                        newCategory.display = elem["display"] as? String
+                        newCategory.category_name = elem["name"] as? String
                         newCategory.writeToRealm()
                     }
                 }
                     
+        }
+    }
+    
+    func syncAllProducts() {
+        Alamofire.request(
+            "\(self.olohUrl)/wp-json/wc/v2/products?per_page=100",
+            headers: headers
+            ).responseJSON { (response) -> Void in
+                
+                if let JSON = response.result.value as! [[String: Any]]? {
+                    for elem in JSON {
+                        
+                        print("\(elem)")
+                        
+                    }
+                }
+                
         }
     }
 }
