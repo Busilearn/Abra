@@ -11,8 +11,8 @@ import UIKit
 
 class CategoryTableViewCell: UITableViewCell{
     
-    @IBOutlet weak var catTitle: UITextField!
-    @IBOutlet weak var catDesc: UITextField!
+    @IBOutlet weak var catTitle: UILabel!
+    @IBOutlet weak var catDesc: UILabel!
     @IBOutlet weak var catImageView: UIImageView!
 }
 

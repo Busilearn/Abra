@@ -1,24 +1,22 @@
 //
-//  ProductTableViewController.swift
+//  CartTableViewController.swift
 //  Oloh
 //
-//  Created by mickael on 08/11/2017.
+//  Created by mickael on 11/11/2017.
 //  Copyright © 2017 oloh. All rights reserved.
 //
 
 import UIKit
 
-
-class ProductTableViewCell: UITableViewCell{
-
-    @IBOutlet weak var prodTitle: UILabel!
-    @IBOutlet weak var prodImageView: UIImageView!
-    @IBOutlet weak var prodDesc: UILabel!
+class CartTableViewCell: UITableViewCell{
+    @IBOutlet weak var cartTitleView: UILabel!
+    @IBOutlet weak var cartDescView: UILabel!
+    @IBOutlet weak var cartImageView: UIImageView!
+    
 }
 
 
-
-class ProductTableViewController: UITableViewController {
+class CartTableViewController: UITableViewController {
     
     var prod = ["Prod1", "Prod2", "Prod3", "Prod4", "Prod5", "Prod6"]
     
@@ -33,12 +31,12 @@ class ProductTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell", for: indexPath) as! CartTableViewCell
         
         let prodName = prod[indexPath.row]
-        cell.prodTitle?.text = prodName
-        cell.prodDesc?.text = "Delicious!"
-        cell.prodImageView?.image = UIImage(named: "AppIcon")
+        cell.cartTitleView?.text = prodName
+        cell.cartDescView?.text = "Delicious!"
+        cell.cartImageView?.image = UIImage(named: "AppIcon")
         
         return cell
     }

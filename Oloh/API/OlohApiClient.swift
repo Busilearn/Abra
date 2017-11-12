@@ -39,13 +39,13 @@ class OlohApiClient {
             ).responseJSON { (response) -> Void in
                 
                 if let JSON = response.result.value as! [[String: Any]]? {
+                    
                     for elem in JSON {
-                        
-//                        print("\(elem)")
-                        
+                        print("\(elem)")
+
                         var newCategory = Category()
                         newCategory.slug = elem["slug"] as! String
-                        print(newCategory.slug)
+//                        print(newCategory.slug)
                         newCategory.writeToRealm()
                     }
                 }
