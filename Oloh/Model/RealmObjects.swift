@@ -15,7 +15,6 @@ class Category : Object {
     var parent = RealmOptional<Int>()
     @objc dynamic var categoryName : String? = nil
     @objc dynamic var categoryDescription : String? = nil
-    @objc dynamic var categoryDiscount : String? = "0"
     @objc dynamic var categoryImageUrl : String? = nil
 }
 
@@ -29,7 +28,6 @@ extension Category {
 
 class Product : Object {
     var id = RealmOptional<Int>()
-    @objc dynamic var productId : String? = nil
     @objc dynamic var name : String? = nil
     @objc dynamic var productDescription : String? = nil
     @objc dynamic var price : String? = nil
@@ -37,8 +35,6 @@ class Product : Object {
     @objc dynamic var rating_count : String? = nil
 //    private RealmList<Images> images; TODO
     @objc dynamic var short_description : String? = nil
-    @objc dynamic var orderQty : String? = nil
-    @objc dynamic var discount : String? = nil
     @objc dynamic var catalog_visibility : String? = nil
     @objc dynamic var status : String? = nil
     @objc dynamic var sku : String? = nil

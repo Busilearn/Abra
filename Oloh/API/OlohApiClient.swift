@@ -66,15 +66,12 @@ class OlohApiClient {
 //                        print("\(elem)")
                         let newProduct = Product()
                         newProduct.id.value = elem["id"] as? Int
-                        newProduct.productId = "tmp"
                         newProduct.name = elem["name"] as? String
                         newProduct.productDescription = elem["description"] as? String
                         newProduct.price = elem["price"] as? String
                         newProduct.average_rating = elem["average_rating"] as? String
                         newProduct.rating_count = elem["rating_count"] as? String
                         newProduct.short_description = elem["short_description"] as? String
-                        newProduct.orderQty = "tmp"
-                        newProduct.discount = "tmp"
                         newProduct.catalog_visibility = elem["catalog_visibility"] as? String
                         newProduct.status = elem["status"] as? String
                         newProduct.sku = elem["sku"] as? String
