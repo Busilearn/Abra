@@ -29,6 +29,7 @@ class CategoryTableViewController: UITableViewController {
         
         let oac = OlohApiClient()
         oac.syncAllCategories()
+        oac.syncAllProducts()
     }
     
     override func didReceiveMemoryWarning() {
