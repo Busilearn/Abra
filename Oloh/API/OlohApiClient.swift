@@ -40,18 +40,15 @@ class OlohApiClient {
                 
                 if let JSON = response.result.value as! [[String: Any]]? {
                     for elem in JSON {
-                        
-                        var newCategory = Category()
-                        newCategory.slug = elem["slug"] as? String
-                        newCategory.menu_order = elem["menu_order"] as? NSInteger
-                        newCategory.category_description = elem["category_description"] as? String
-                        newCategory.image = elem["image"] as? Any
-                        newCategory.count = elem["count"] as? NSInteger
-                        newCategory.parent = elem["parent"] as? NSInteger
-                        newCategory.id = elem["id"] as? NSInteger
-                        newCategory.display = elem["display"] as? String
-                        newCategory.category_name = elem["name"] as? String
+//                        print("\(elem["image"])")
+                        let newCategory = Category()
+                        newCategory.id.value = elem["id"] as? Int
+                        newCategory.parent.value = elem["parent"] as? Int
+                        newCategory.categoryName = elem["name"] as? String
+                        newCategory.categoryDescription = elem["description"] as? String
+                        newCategory.categoryImageUrl = "/tmp"
                         newCategory.writeToRealm()
+//                        print("\(newCategory)")
                     }
                 }
                     
@@ -66,9 +63,25 @@ class OlohApiClient {
                 
                 if let JSON = response.result.value as! [[String: Any]]? {
                     for elem in JSON {
-                        
-                        print("\(elem)")
-                        
+//                        print("\(elem)")
+                        let newProduct = Product()
+                        newProduct.id.value = elem["id"] as? Int
+                        newProduct.productId = "tmp"
+                        newProduct.name = elem["name"] as? String
+                        newProduct.productDescription = elem["description"] as? String
+                        newProduct.price = elem["price"] as? String
+                        newProduct.average_rating = elem["average_rating"] as? String
+                        newProduct.rating_count = elem["rating_count"] as? String
+                        newProduct.short_description = elem["short_description"] as? String
+                        newProduct.orderQty = "tmp"
+                        newProduct.discount = "tmp"
+                        newProduct.catalog_visibility = elem["catalog_visibility"] as? String
+                        newProduct.status = elem["status"] as? String
+                        newProduct.sku = elem["sku"] as? String
+                        newProduct.imageUrl = "/tmp"
+                        newProduct.stock_quantity = elem["stock_quantity"] as? String
+                        newProduct.writeToRealm()
+                        print("\(newProduct)")
                     }
                 }
                 

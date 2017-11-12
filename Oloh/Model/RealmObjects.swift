@@ -11,18 +11,44 @@ import RealmSwift
 
 
 class Category : Object {
-    @objc dynamic var slug : String? = nil
-    var menu_order : NSInteger? = nil
-    var category_description : String? = nil
-    var image : Any? = nil
-    var count : NSInteger? = nil
-    var parent : NSInteger? = nil
-    var id : NSInteger? = nil
-    var display: String? = nil
-    var category_name : String? = nil
+    var id = RealmOptional<Int>()
+    var parent = RealmOptional<Int>()
+    @objc dynamic var categoryName : String? = nil
+    @objc dynamic var categoryDescription : String? = nil
+    @objc dynamic var categoryDiscount : String? = "0"
+    @objc dynamic var categoryImageUrl : String? = nil
 }
 
 extension Category {
+    func writeToRealm() {
+        try! uiRealm.write {
+            uiRealm.add(self)
+        }
+    }
+}
+
+class Product : Object {
+    var id = RealmOptional<Int>()
+    @objc dynamic var productId : String? = nil
+    @objc dynamic var name : String? = nil
+    @objc dynamic var productDescription : String? = nil
+    @objc dynamic var price : String? = nil
+    @objc dynamic var average_rating : String? = nil
+    @objc dynamic var rating_count : String? = nil
+//    private RealmList<Images> images; TODO
+    @objc dynamic var short_description : String? = nil
+    @objc dynamic var orderQty : String? = nil
+    @objc dynamic var discount : String? = nil
+    @objc dynamic var catalog_visibility : String? = nil
+    @objc dynamic var status : String? = nil
+    @objc dynamic var sku : String? = nil
+    @objc dynamic var imageUrl : String? = nil
+    @objc dynamic var stock_quantity : String? = nil
+//    @objc dynamic var in_stock : Boolean? = nil
+//    @objc dynamic var categories : Category? = nil
+}
+
+extension Product {
     func writeToRealm() {
         try! uiRealm.write {
             uiRealm.add(self)
