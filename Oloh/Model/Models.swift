@@ -76,16 +76,20 @@ class Products:Object,Mappable,Meta {
         id <- map["id"]
         name <- map["name"]
         productDescription <- map["description"]
+        productDescription = productDescription.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
         price <- map["price"]
         average_rating <- map["average_rating"]
         rating_count <- map["rating_count"]
         short_description <- map["short_description"]
+        short_description = short_description.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
         catalog_visibility <- map["catalog_visibility"]
         status <- map["status"]
         imageUrl <- map["images.0.src"]
         stock_quantity <- map["stock_quantity"]
         in_stock <- map["in_stock"]
         category <- map["categories"]
+        
+        
     }
     
     static func url() -> String {
