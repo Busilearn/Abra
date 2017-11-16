@@ -18,6 +18,10 @@ class OlohApiClient {
     let headers: HTTPHeaders
     let olohUrl: String
     
+    let realm = try! Realm()
+    var category: Results<Categories>?
+    var produc: Results<Products>?
+    
     init() {
         // setting url and route
         self.olohUrl = "https://oloh.fr"
@@ -34,6 +38,23 @@ class OlohApiClient {
             "Authorization": "Basic \(token)",
             "Accept": "application/json"
         ]
+        
+        self.category = self.realm.objects(Categories.self)
+        self.produc = self.realm.objects(Products.self)
+        
+        print(realm.configuration.fileURL)
+        FetchData.get(type: Categories.self , success: {
+            print(self.category!.description)
+        }) { (error) in
+            print("error")
+        }
+        
+        FetchData.get(type: Products.self , success: {
+            print(self.produc!.description)
+        }) { (error) in
+            print("error")
+        }
+        
     }
     
     func syncAllCategories() {
@@ -91,5 +112,4 @@ class OlohApiClient {
                 }
         }
     }
-    
 }

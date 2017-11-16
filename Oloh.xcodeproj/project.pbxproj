@@ -20,7 +20,7 @@
 		CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */; };
 		CA4F0B4E1FB8EB94005F7EBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F0B4D1FB8EB94005F7EBB /* Constants.swift */; };
 		CAD064861FB7318400FF4D54 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD064851FB7318400FF4D54 /* CartTableViewController.swift */; };
-		CAF5F8331FBCC07600149E55 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5F8321FBCC07600149E55 /* Categories.swift */; };
+		CAF5F8331FBCC07600149E55 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5F8321FBCC07600149E55 /* Models.swift */; };
 		CAF5F8351FBCEFFA00149E55 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5F8341FBCEFFA00149E55 /* FetchData.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,7 @@
 		CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		CA4F0B4D1FB8EB94005F7EBB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CAD064851FB7318400FF4D54 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
-		CAF5F8321FBCC07600149E55 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		CAF5F8321FBCC07600149E55 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CAF5F8341FBCEFFA00149E55 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oloh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC95641E9528DC4BF34C6F1E /* Pods_OlohTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OlohTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				C3040BFA1FB269E3007EBC24 /* RealmObjects.swift */,
-				CAF5F8321FBCC07600149E55 /* Categories.swift */,
+				CAF5F8321FBCC07600149E55 /* Models.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,7 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3040BFB1FB269E3007EBC24 /* RealmObjects.swift in Sources */,
-				CAF5F8331FBCC07600149E55 /* Categories.swift in Sources */,
+				CAF5F8331FBCC07600149E55 /* Models.swift in Sources */,
 				CAD064861FB7318400FF4D54 /* CartTableViewController.swift in Sources */,
 				C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */,
 				CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */,
