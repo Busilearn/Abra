@@ -18,7 +18,10 @@
 		CA0ED5C01FB61ACC00F4448D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738AB1F9FCD630012DB56 /* Main.storyboard */; };
 		CA1260C11FB39ECC00CD678A /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */; };
 		CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */; };
+		CA4F0B4E1FB8EB94005F7EBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F0B4D1FB8EB94005F7EBB /* Constants.swift */; };
 		CAD064861FB7318400FF4D54 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD064851FB7318400FF4D54 /* CartTableViewController.swift */; };
+		CAF5F8331FBCC07600149E55 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5F8321FBCC07600149E55 /* Categories.swift */; };
+		CAF5F8351FBCEFFA00149E55 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5F8341FBCEFFA00149E55 /* FetchData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +60,12 @@
 		C39738C91F9FCD640012DB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		CA4F0B4D1FB8EB94005F7EBB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CAD064851FB7318400FF4D54 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		CAF5F8321FBCC07600149E55 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		CAF5F8341FBCEFFA00149E55 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oloh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC95641E9528DC4BF34C6F1E /* Pods_OlohTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OlohTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +132,7 @@
 				CA0ED5B81FB43D9100F4448D /* API */,
 				CA1260C21FB3A66300CD678A /* Controller */,
 				C39738A71F9FCD630012DB56 /* AppDelegate.swift */,
+				CA4F0B4D1FB8EB94005F7EBB /* Constants.swift */,
 				C39738AE1F9FCD630012DB56 /* Assets.xcassets */,
 				C39738AB1F9FCD630012DB56 /* Main.storyboard */,
 				C39738B01F9FCD630012DB56 /* LaunchScreen.storyboard */,
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */,
+				EC95641E9528DC4BF34C6F1E /* Pods_OlohTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				C37995A61FA4C0570099BFD2 /* OlohApiClient.swift */,
+				CAF5F8341FBCEFFA00149E55 /* FetchData.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -171,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				C3040BFA1FB269E3007EBC24 /* RealmObjects.swift */,
+				CAF5F8321FBCC07600149E55 /* Categories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,12 +337,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Oloh/Pods-Oloh-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -355,7 +368,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B8313AC30D5413264B499779 /* [CP] Copy Pods Resources */ = {
@@ -381,10 +394,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3040BFB1FB269E3007EBC24 /* RealmObjects.swift in Sources */,
+				CAF5F8331FBCC07600149E55 /* Categories.swift in Sources */,
 				CAD064861FB7318400FF4D54 /* CartTableViewController.swift in Sources */,
 				C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */,
 				CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */,
+				CA4F0B4E1FB8EB94005F7EBB /* Constants.swift in Sources */,
 				CA1260C11FB39ECC00CD678A /* ProductTableViewController.swift in Sources */,
+				CAF5F8351FBCEFFA00149E55 /* FetchData.swift in Sources */,
 				C39738A81F9FCD630012DB56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

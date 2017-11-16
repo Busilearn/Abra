@@ -16,7 +16,13 @@ class Category : Object {
     @objc dynamic var categoryName : String? = nil
     @objc dynamic var categoryDescription : String? = nil
     @objc dynamic var categoryImageUrl : String? = nil
+    
+    
+//    override static func primaryKey() -> String? {
+//        return "id"
+//    }
 }
+
 
 extension Category {
     func writeToRealm() {
@@ -40,8 +46,13 @@ class Product : Object {
     @objc dynamic var sku : String? = nil
     @objc dynamic var imageUrl : String? = nil
     @objc dynamic var stock_quantity : String? = nil
-//    @objc dynamic var in_stock : Boolean? = nil
-//    @objc dynamic var categories : Category? = nil
+    @objc dynamic var in_stock = false
+    var categories = List<Category>()
+    
+//    override static func primaryKey() -> String? {
+//        return "id"
+//    }
+    
 }
 
 extension Product {

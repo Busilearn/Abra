@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-var uiRealm = try! Realm()
+let uiRealm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         try! uiRealm.write {
             uiRealm.deleteAll()
         }
+                
+        let oac = OlohApiClient()
+        oac.syncAllCategories()
+        oac.syncAllProducts()        
+        
         return true
     }
 
