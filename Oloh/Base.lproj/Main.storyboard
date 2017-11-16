@@ -212,7 +212,7 @@
                                     <outlet property="prodDesc" destination="MEE-uC-mS2" id="xUz-pW-l1r"/>
                                     <outlet property="prodImageView" destination="UYQ-MA-K5h" id="VNw-9H-I7e"/>
                                     <outlet property="prodTitle" destination="cqG-kf-xfA" id="oBp-j3-gt1"/>
-                                    <segue destination="5Q0-8w-xPK" kind="show" id="AA7-Fs-ekM"/>
+                                    <segue destination="5Q0-8w-xPK" kind="show" identifier="singleProductSegue" id="AA7-Fs-ekM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -230,7 +230,7 @@
         <!--Vue produit-->
         <scene sceneID="MaJ-Je-MFE">
             <objects>
-                <viewController title="Vue produit" id="5Q0-8w-xPK" customClass="ProductViewController" sceneMemberID="viewController">
+                <viewController title="Vue produit" id="5Q0-8w-xPK" customClass="SingleProductViewController" customModule="Oloh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gb4-8g-PfQ"/>
                         <viewControllerLayoutGuide type="bottom" id="VWl-KS-XTd"/>
@@ -257,15 +257,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€ 14.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-85-00t">
-                                <rect key="frame" x="16" y="310" width="343" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdj-3F-VkT">
+                                <rect key="frame" x="195" y="304" width="30" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xyz-AE-bsE">
-                                <rect key="frame" x="16" y="350" width="343" height="221"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xyz-AE-bsE" userLabel="Description">
+                                <rect key="frame" x="16" y="348" width="343" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -277,15 +277,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="14.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-85-00t">
+                                <rect key="frame" x="143" y="304" width="70" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="productDesc" destination="Xyz-AE-bsE" id="R7l-Mx-XXe"/>
+                        <outlet property="productImage" destination="IOf-bI-1d8" id="4mr-ue-AWb"/>
+                        <outlet property="productNumberInCart" destination="bRf-k9-P44" id="ab8-VD-JyZ"/>
+                        <outlet property="productPrice" destination="ic2-85-00t" id="Xa7-Vk-JSE"/>
+                        <outlet property="productStepper" destination="V2l-XO-5OH" id="0w7-XM-dh6"/>
+                        <outlet property="productTitle" destination="Yzb-da-il2" id="jHl-TF-T26"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzC-T0-qPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="-92"/>
+            <point key="canvasLocation" x="1589.5999999999999" y="-92.203898050974516"/>
         </scene>
         <!--Header-->
         <scene sceneID="bRP-Vg-5fH">

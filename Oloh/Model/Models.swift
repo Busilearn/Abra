@@ -15,7 +15,7 @@ protocol Meta {
 }
 
 
-class Categories:Object,Mappable,Meta {
+class Category:Object,Mappable,Meta {
     
     @objc dynamic var id = 0
     @objc dynamic var parent = 0 
@@ -61,7 +61,7 @@ class Products:Object,Mappable,Meta {
     @objc dynamic var imageUrl = ""
     @objc dynamic var stock_quantity = 0
     @objc dynamic var in_stock = false
-    var categories = List<Categories>()
+    var category = List<Category>()
     
     
     override static func primaryKey()-> String? {
@@ -85,7 +85,7 @@ class Products:Object,Mappable,Meta {
         imageUrl <- map["images.0.src"]
         stock_quantity <- map["stock_quantity"]
         in_stock <- map["in_stock"]
-        categories <- map["categories"]
+        category <- map["categories"]
     }
     
     static func url() -> String {

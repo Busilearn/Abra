@@ -24,9 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
                 
         let oac = OlohApiClient()
-        oac.syncAllCategories()
-        oac.syncAllProducts()        
-        
+
         return true
     }
 

@@ -47,4 +47,14 @@ class ProductTableViewController: UITableViewController {
         return cell
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if  segue.identifier == "singleProductSegue",
+            let destination = segue.destination as? SingleProductViewController,
+            let Index = self.tableView.indexPathForSelectedRow?.row
+        {
+            destination.product = self.product![Index]
+        }
+    }
+    
 }

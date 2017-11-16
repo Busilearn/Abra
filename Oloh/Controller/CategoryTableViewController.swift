@@ -22,13 +22,13 @@ class CategoryTableViewController: UITableViewController {
     let realm = try! Realm()
     var cat = ["Cat1", "Cat2", "Cat3"]
     
-    var category: Results<Categories>?
+    var category: Results<Category>?
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.category = self.realm.objects(Categories.self)
+        self.category = self.realm.objects(Category.self)
         print(self.category?.count)
     }
     
