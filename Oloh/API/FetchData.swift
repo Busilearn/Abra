@@ -30,17 +30,20 @@ class FetchData {
         Alamofire.request(type.url(),headers: headers).responseArray { (response: DataResponse<[T]>) in
             switch response.result {
             case .success(let items):
-                autoreleasepool {
-                    do {
-                        let realm = try Realm()
-                        try realm.write {
-                            for item in items {
-//                                print(item)
-                                realm.add(item, update: true)
+                DispatchQueue(label: "background").async {
+
+                    autoreleasepool {
+                        do {
+                            let realm = try Realm()
+                            try realm.write {
+                                for item in items {
+    //                                print(item)
+                                    realm.add(item, update: true)
+                                }
                             }
+                        } catch let error as NSError {
+                            fail(error)
                         }
-                    } catch let error as NSError {
-                        fail(error)
                     }
                 }
             case .failure(let error):

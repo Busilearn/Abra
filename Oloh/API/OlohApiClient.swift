@@ -37,5 +37,9 @@ class OlohApiClient {
             print("error")
         }
         
+        
+        
+        sleep(4)
+
     }
 }

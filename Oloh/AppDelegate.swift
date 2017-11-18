@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             uiRealm.deleteAll()
         }
                 
-        let oac = OlohApiClient()
+        _ = OlohApiClient()
 
         return true
     }

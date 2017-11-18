@@ -10,7 +10,6 @@ import UIKit
 import RealmSwift
 import ObjectMapper
 
-
 class CategoryTableViewCell: UITableViewCell{
     
     @IBOutlet weak var catTitle: UILabel!
@@ -19,17 +18,32 @@ class CategoryTableViewCell: UITableViewCell{
 }
 
 class CategoryTableViewController: UITableViewController {
-    let realm = try! Realm()
-    var cat = ["Cat1", "Cat2", "Cat3"]
-    
-    var category: Results<Category>?
+    let category = try! Realm().objects(Category.self)
+   
+    var notificationToken: NotificationToken? = nil
 
-    
-    override func viewDidLoad() {
+
+     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.category = self.realm.objects(Category.self)
-        print(self.category?.count)
+        
+        notificationToken = category.observe{ [weak self] (changes: RealmCollectionChange) in
+            guard let tableView = self?.tableView else { return }
+            switch changes {
+            case .initial:
+                // Results are now populated and can be accessed without blocking the UI
+                tableView.reloadData()
+            case .error(let error):
+                // An error occurred while opening the Realm file on the background worker thread
+                fatalError("\(error)")
+            case .update(_, let deletions, let _, let modifications): break
+            }
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,17 +57,23 @@ class CategoryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cat.count
+        return category.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! CategoryTableViewCell
-                
-        let catName = cat[indexPath.row]
-        cell.catTitle?.text = catName
-        cell.catDesc?.text = "Great!"
-        cell.catImageView?.image = UIImage(named: "AppIcon")
+        cell.catTitle?.text = category[indexPath.row].categoryName
+        cell.catDesc?.text = category[indexPath.row].categoryDescription
+        let prodImageUrl: String? = category[indexPath.row].image
+        let url = URL(string: prodImageUrl!)
+        cell.catImageView?.kf.setImage(with: url, placeholder:UIImage(named: "AppIcon"))
         
         return cell
     }
+    
+    
+    deinit {
+        notificationToken?.invalidate()
+    }
 }
+
