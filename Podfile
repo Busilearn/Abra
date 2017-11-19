@@ -13,6 +13,7 @@ target "Oloh" do
     pod 'RealmSwift', '~> 3.0.2'
     pod 'Kingfisher', '~> 4.0'
     pod 'AlamofireObjectMapper', '~> 5.0'
+    pod 'Stripe'
 
 end
 
