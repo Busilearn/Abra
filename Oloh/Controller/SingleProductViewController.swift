@@ -17,8 +17,8 @@ class SingleProductViewController: UIViewController {
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productNumberInCart: UILabel! // TODO
     @IBOutlet weak var productDesc: UITextView!
-    @IBOutlet weak var productStepper: UIStepper! // TODO
     
+
     // Get the default Realm
     let realm = try! Realm()
     var product: Products?
@@ -39,5 +39,14 @@ class SingleProductViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func addProductCart(_ sender: UIButton) {
+        
+    }
 
+    @IBAction func removeProductCart(_ sender: UIButton) {
+        
+    }
+    
 }

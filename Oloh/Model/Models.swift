@@ -96,3 +96,10 @@ class Products:Object,Mappable,Meta {
         return "https://oloh.fr/wp-json/wc/v2/products?per_page=100"
     }
 }
+
+
+class ProductCart:Object {
+    
+    var category = List<Category>()
+    
+}
