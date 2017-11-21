@@ -45,7 +45,7 @@ class BuyButton: HighlightingButton {
         self.init()
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 10
-        self.setTitle("Buy", for: UIControlState())
+        self.setTitle("Commander", for: UIControlState())
         self.disabledColor = theme.secondaryForegroundColor
         self.enabledColor = theme.accentColor
         self.isEnabled = enabled
