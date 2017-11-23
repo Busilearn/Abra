@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FooterController: UIViewController {
+class CartController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import RealmSwift
+import Kingfisher
 
 class CartTableViewCell: UITableViewCell{
     @IBOutlet weak var cartTitleView: UILabel!
     @IBOutlet weak var cartDescView: UILabel!
     @IBOutlet weak var cartImageView: UIImageView!
+    @IBOutlet weak var productCartQty: UILabel!
     
 }
 
 
 class CartTableViewController: UITableViewController {
-    
-    var prod = ["Prod1", "Prod2", "Prod3", "Prod4", "Prod5", "Prod6"]
+    let productCart = try! Realm().objects(ProductCart.self)
     
     // MARK: - UITableViewDataSource
     
@@ -27,18 +29,33 @@ class CartTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return prod.count
+        return productCart.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell", for: indexPath) as! CartTableViewCell
         
-        let prodName = prod[indexPath.row]
+        let prodName = productCart[indexPath.row].products?.name
         cell.cartTitleView?.text = prodName
-        cell.cartDescView?.text = "Delicious!"
-        cell.cartImageView?.image = UIImage(named: "AppIcon")
+        cell.cartDescView?.text = productCart[indexPath.row].products?.short_description
         
+        cell.productCartQty?.text = String (productCart[indexPath.row].qty)
+
+        
+        let prodImageUrl: String? = productCart[indexPath.row].products?.imageUrl
+        let url = URL(string: prodImageUrl!)
+        cell.cartImageView?.kf.setImage (with: url, placeholder:UIImage(named: "AppIcon"))
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if  segue.identifier == "CartProductSegue",
+            let destination = segue.destination as? SingleProductViewController,
+            let index = self.tableView.indexPathForSelectedRow?.row
+        {
+            destination.product = self.productCart[index].products
+        }
+    }
+
     
 }

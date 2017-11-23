@@ -20,13 +20,14 @@
 		C3CE791B1FC1CA20008F6DB8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CE791A1FC1CA20008F6DB8 /* SettingsViewController.swift */; };
 		C3CE791D1FC1CA3E008F6DB8 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CE791C1FC1CA3E008F6DB8 /* MyAPIClient.swift */; };
 		C3CE791F1FC1CA59008F6DB8 /* PaymentContextFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CE791E1FC1CA59008F6DB8 /* PaymentContextFooterView.swift */; };
-		C3CE79211FC1CF61008F6DB8 /* FooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CE79201FC1CF61008F6DB8 /* FooterController.swift */; };
+		C3CE79211FC1CF61008F6DB8 /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CE79201FC1CF61008F6DB8 /* CartController.swift */; };
 		CA0ED5C01FB61ACC00F4448D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39738AB1F9FCD630012DB56 /* Main.storyboard */; };
 		CA10C0211FBE404600919471 /* SingleProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10C0201FBE404600919471 /* SingleProductViewController.swift */; };
 		CA1260C11FB39ECC00CD678A /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */; };
 		CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */; };
 		CA4F0B4E1FB8EB94005F7EBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F0B4D1FB8EB94005F7EBB /* Constants.swift */; };
 		CAD064861FB7318400FF4D54 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD064851FB7318400FF4D54 /* CartTableViewController.swift */; };
+		CAE3AE761FC2F78E00DC660D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE3AE751FC2F78E00DC660D /* Cart.swift */; };
 		CAF5F8331FBCC07600149E55 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5F8321FBCC07600149E55 /* Models.swift */; };
 		CAF5F8351FBCEFFA00149E55 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5F8341FBCEFFA00149E55 /* FetchData.swift */; };
 /* End PBXBuildFile section */
@@ -70,12 +71,13 @@
 		C3CE791A1FC1CA20008F6DB8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C3CE791C1FC1CA3E008F6DB8 /* MyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
 		C3CE791E1FC1CA59008F6DB8 /* PaymentContextFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentContextFooterView.swift; sourceTree = "<group>"; };
-		C3CE79201FC1CF61008F6DB8 /* FooterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterController.swift; sourceTree = "<group>"; };
+		C3CE79201FC1CF61008F6DB8 /* CartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
 		CA10C0201FBE404600919471 /* SingleProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProductViewController.swift; sourceTree = "<group>"; };
 		CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		CA4F0B4D1FB8EB94005F7EBB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CAD064851FB7318400FF4D54 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		CAE3AE751FC2F78E00DC660D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		CAF5F8321FBCC07600149E55 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CAF5F8341FBCEFFA00149E55 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		E1A329D3374BC1E1E455630E /* Pods_Oloh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oloh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 		C39738A61F9FCD630012DB56 /* Oloh */ = {
 			isa = PBXGroup;
 			children = (
+				CAE3AE741FC2F77500DC660D /* Helper */,
 				C3CE79131FC1C179008F6DB8 /* Stripe */,
 				CA0ED5B91FB43DDD00F4448D /* Model */,
 				CA0ED5B81FB43D9100F4448D /* API */,
@@ -216,13 +219,21 @@
 		CA1260C21FB3A66300CD678A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C3CE79201FC1CF61008F6DB8 /* FooterController.swift */,
+				C3CE79201FC1CF61008F6DB8 /* CartController.swift */,
 				CA2690991FB32C7B008DA53C /* CategoryTableViewController.swift */,
 				CA1260C01FB39ECC00CD678A /* ProductTableViewController.swift */,
 				CAD064851FB7318400FF4D54 /* CartTableViewController.swift */,
 				CA10C0201FBE404600919471 /* SingleProductViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAE3AE741FC2F77500DC660D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3AE751FC2F78E00DC660D /* Cart.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,13 +444,14 @@
 				CA10C0211FBE404600919471 /* SingleProductViewController.swift in Sources */,
 				C3CE791D1FC1CA3E008F6DB8 /* MyAPIClient.swift in Sources */,
 				C3CE79191FC1C768008F6DB8 /* Buttons.swift in Sources */,
-				C3CE79211FC1CF61008F6DB8 /* FooterController.swift in Sources */,
+				C3CE79211FC1CF61008F6DB8 /* CartController.swift in Sources */,
 				CAD064861FB7318400FF4D54 /* CartTableViewController.swift in Sources */,
 				C37995A71FA4C0570099BFD2 /* OlohApiClient.swift in Sources */,
 				C3CE791F1FC1CA59008F6DB8 /* PaymentContextFooterView.swift in Sources */,
 				CA26909A1FB32C7B008DA53C /* CategoryTableViewController.swift in Sources */,
 				CA4F0B4E1FB8EB94005F7EBB /* Constants.swift in Sources */,
 				CA1260C11FB39ECC00CD678A /* ProductTableViewController.swift in Sources */,
+				CAE3AE761FC2F78E00DC660D /* Cart.swift in Sources */,
 				CAF5F8351FBCEFFA00149E55 /* FetchData.swift in Sources */,
 				C3CE791B1FC1CA20008F6DB8 /* SettingsViewController.swift in Sources */,
 				C3CE79151FC1C19D008F6DB8 /* CheckoutViewController.swift in Sources */,

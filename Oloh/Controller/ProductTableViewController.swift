@@ -15,17 +15,17 @@ class ProductTableViewCell: UITableViewCell{
     @IBOutlet weak var prodTitle: UILabel!
     @IBOutlet weak var prodImageView: UIImageView!
     @IBOutlet weak var prodDesc: UILabel!
+    @IBOutlet weak var productCartQty: UILabel!
 }
 
 
 class ProductTableViewController: UITableViewController {
     // Get the default Realm
-    let realm = try! Realm()
-    var product: Results<Products>?
-
+    var product: Results<Products>? = try! Realm().objects(Products.self)
+    var productCart = ProductCart()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.product = self.realm.objects(Products.self)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

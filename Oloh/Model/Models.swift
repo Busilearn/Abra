@@ -99,7 +99,12 @@ class Products:Object,Mappable,Meta {
 
 
 class ProductCart:Object {
-    
-    var category = List<Category>()
+    @objc dynamic var id = 0
+    @objc dynamic var qty = 0
+    @objc dynamic var products: Products?
+
+    override class func primaryKey() -> String? {
+        return "id"
+    }
     
 }

@@ -20,29 +20,16 @@ class CategoryTableViewCell: UITableViewCell{
 class CategoryTableViewController: UITableViewController {
     let category = try! Realm().objects(Category.self)
    
-    var notificationToken: NotificationToken? = nil
-
 
      override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        notificationToken = category.observe{ [weak self] (changes: RealmCollectionChange) in
-            guard let tableView = self?.tableView else { return }
-            switch changes {
-            case .initial:
-                // Results are now populated and can be accessed without blocking the UI
-                tableView.reloadData()
-            case .error(let error):
-                // An error occurred while opening the Realm file on the background worker thread
-                fatalError("\(error)")
-            case .update(_, let deletions, let _, let modifications): break
-            }
-        }
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.tableView.reloadData()
+
 
     }
     
@@ -71,9 +58,6 @@ class CategoryTableViewController: UITableViewController {
         return cell
     }
     
-    
-    deinit {
-        notificationToken?.invalidate()
-    }
 }
+
 
