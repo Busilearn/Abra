@@ -25,7 +25,7 @@ class CartController: UIViewController {
     
     @IBAction func CheckoutButton(_ sender: UIButton) {
         let checkoutViewController = CheckoutViewController()
-        self.present(checkoutViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(checkoutViewController, animated: true)
     }
     
 }
