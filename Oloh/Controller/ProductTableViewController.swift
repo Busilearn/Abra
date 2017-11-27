@@ -42,8 +42,9 @@ class ProductTableViewController: UITableViewController {
         cell.prodDesc?.text = self.product![indexPath.row].short_description
         let prodImageUrl: String? = self.product![indexPath.row].imageUrl
         let url = URL(string: prodImageUrl!)
-        cell.prodImageView?.kf.setImage(with: url, placeholder:UIImage(named: "AppIcon"))
         
+        cell.prodImageView?.kf.setImage(with: url, placeholder:UIImage(named: "AppIcon"))
+    
         return cell
     }
     

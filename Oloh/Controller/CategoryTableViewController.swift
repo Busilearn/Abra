@@ -9,6 +9,8 @@
 import UIKit
 import RealmSwift
 import ObjectMapper
+import Kingfisher
+
 
 class CategoryTableViewCell: UITableViewCell{
     

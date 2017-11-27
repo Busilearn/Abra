@@ -15,10 +15,9 @@ class SingleProductViewController: UIViewController {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productTitle: UILabel!
-    @IBOutlet weak var productNumberInCart: UILabel! // TODO
     @IBOutlet weak var productDesc: UITextView!
     @IBOutlet weak var productCartQty: UILabel!
-    
+    @IBOutlet weak var productShortDesc: UILabel!
     
     // Get the default Realm
     let realm = try! Realm()
@@ -26,18 +25,19 @@ class SingleProductViewController: UIViewController {
     var productsInCart = try! Realm().objects(ProductCart.self)
     var productCart = ProductCart()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let prodImageUrl: String? = product!.imageUrl
         let url = URL(string: prodImageUrl!)
         productImage?.kf.setImage(with: url, placeholder:UIImage(named: "AppIcon"))
+
         
         productPrice?.text = product!.price
         productTitle?.text = product!.name
         productDesc?.text = product!.productDescription
-        
+        productShortDesc?.text = product!.short_description
+
         if productsInCart.filter("id =\(String(describing: product!.id))").first != nil {
             productCart = productsInCart.filter("id =\(String(describing: product!.id))").first!
             productCartQty.text = String(describing: productCart.qty)
@@ -75,9 +75,6 @@ class SingleProductViewController: UIViewController {
                 try! realm.write {
                     productCart.qty -= 1
                     productCartQty.text = String(productCart.qty)
-//                    if productCart.qty == 1 {
-//                        realm.delete(productCart)
-//                    }
                 }
             }
         }
