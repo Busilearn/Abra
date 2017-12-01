@@ -21,17 +21,27 @@ class CategoryTableViewCell: UITableViewCell{
 
 class CategoryTableViewController: UITableViewController {
     let category = try! Realm().objects(Category.self)
-   
-
+    
+    let realm = try! Realm()
+    var notificationToken: NotificationToken?
+    
      override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
+        notificationToken = realm.observe { notification, realm in
+            print("maj de realm")
+            self.tableView.reloadData()
+        }
+    
+    }
+    
+    
+    deinit {
+        notificationToken?.invalidate()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.tableView.reloadData()
-
 
     }
     

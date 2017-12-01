@@ -73,6 +73,8 @@ class Products:Object,Mappable,Meta {
     }
     
     func mapping(map: Map) {
+        
+        
         id <- map["id"]
         name <- map["name"]
         productDescription <- map["description"]
@@ -87,7 +89,7 @@ class Products:Object,Mappable,Meta {
         imageUrl <- map["images.0.src"]
         stock_quantity <- map["stock_quantity"]
         in_stock <- map["in_stock"]
-        category <- map["categories"]
+        category <- map["categories.0.id"]
         
         
     }

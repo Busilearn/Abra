@@ -37,7 +37,6 @@ class FetchData {
                             let realm = try Realm()
                             try realm.write {
                                 for item in items {
-    //                                print(item)
                                     realm.add(item, update: true)
                                 }
                             }
